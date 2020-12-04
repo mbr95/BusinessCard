@@ -5,90 +5,93 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
 
 </head>
 
 <body>
-<nav id="menu">
-<ul id="menu_links">
-    <li><a href="#">About me</a></li>
-    <li><a href="#">Skills</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact</a></li>
-</ul>
-</nav>
+    <div class="wrapper">    
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
-<header>
-    <h1>Welcome!</h1>
-    <h2>My name is Designer.</h2>
-</header>
+        <header>
+            <h1>Welcome!</h1>
+            <h2>My name is Designer.</h2>
+        </header>
 
-<section id="about_me">
-    <div class="basic_info">
-        <p>Full Name: Designer</p>
-        <p>Age: 21 Years</p>
-        <p>Profile: Fullstack</p>
-        <p>Telephone: +48 123-456-789</p>
-        <p>E-mail: designer24@gmail.com</p>
+        <section id="about_me">
+            <div class="basic_info">
+                <p>Full Name: Designer</p>
+                <p>Age: 21 Years</p>
+                <p>Profile: Fullstack</p>
+                <p>Telephone: +48 123-456-789</p>
+                <p>E-mail: designer24@gmail.com</p>
+            </div>
+            <div class="details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien odio, fermentum sed magna ut, venenatis bibendum nisl. Curabitur ut ullamcorper felis, nec condimentum nisi. Integer eu quam mauris. Fusce bibendum suscipit aliquam. Integer lacus sapien, fringilla at nunc non, auctor egestas sapien. Mauris varius lacus a mi egestas viverra. Nullam mattis sagittis nisl ac pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+            </div>
+        </section>
+
+        <section id="skills">
+            <div>
+                <div>
+                    <h4>UX/UI</h4>
+                    <p>Figma</p>
+                </div>
+                <div>
+                    <h4>Front End</h4>
+                    <p>Html, CSS, JavaScript</p>
+                </div>
+                <div>
+                    <h4>Back End</h4>
+                    <p>Node.js, .NET</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+
+        </section>
+
+        <section id="contact">
+            <div>
+                <h2>Let's start!</h2>
+                <form>
+                    <input type="text" value="Name">
+                    <input type="text" value="Your e-mail adress">
+                    <input type="text" value="Topic">
+                    <input type="text" value="Message">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact_info">
+                <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>Designer</p>
+                <p>Poland, Wrocław</p>
+                <p>ul. Tęczowa 12/3 50-000</p>
+                <p>+48 123-456-789</p>
+                <p>designer24@gmail.com</p>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>Copyrights C 2019 CodersCrew</p>
+        </footer>
     </div>
-    <div class="details">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sapien odio, fermentum sed magna ut, venenatis bibendum nisl. Curabitur ut ullamcorper felis, nec condimentum nisi. Integer eu quam mauris. Fusce bibendum suscipit aliquam. Integer lacus sapien, fringilla at nunc non, auctor egestas sapien. Mauris varius lacus a mi egestas viverra. Nullam mattis sagittis nisl ac pharetra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-    </div>
-</section>
-
-<section id="skills">
-    <div>
-        <div>
-            <h4>UX/UI</h4>
-            <p>Figma</p>
-        </div>
-        <div>
-            <h4>Front End</h4>
-            <p>Html, CSS, JavaScript</p>
-        </div>
-        <div>
-            <h4>Back End</h4>
-            <p>Node.js, .NET</p>
-        </div>
-    </div>
-</section>
-
-<section id="portfolio">
-
-</section>
-
-<section id="contact">
-    <div>
-        <h2>Let's start!</h2>
-        <form>
-            <input type="text" value="Name">
-            <input type="text" value="Your e-mail adress">
-            <input type="text" value="Topic">
-            <input type="text" value="Message">
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <div class="contact_info">
-        <p>Please describe your question. Send me a message and I will answer you as soon as possible!</p>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <p>Designer</p>
-        <p>Poland, Wrocław</p>
-        <p>ul. Tęczowa 12/3 50-000</p>
-        <p>+48 123-456-789</p>
-        <p>designer24@gmail.com</p>
-    </div>
-</section>
-
-<footer id="footer">
-    <p>Copyrights C 2019 CodersCrew</p>
-</footer>
-    
+        
 </body>
 </html>
