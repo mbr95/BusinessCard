@@ -49,12 +49,30 @@ ul {
 /* Top section */
 
 .page_top {
-    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
     width: 100%;
     margin: 5px 0px;
 
     background: url(images/main_img.jpg) no-repeat center center;
     background-size: cover;
+    opacity: 0.8;
+    color: rgb(255, 243, 110);
+    text-shadow: 2px 1px rgb(48, 46, 20);
+}
+
+.page_top h1 {
+    font-size: 3em;
+    opacity: 1;
+}
+
+.page_top h2 {
+    font-size: 1.5em;
+    opacity: 1;
 }
 
 section {
