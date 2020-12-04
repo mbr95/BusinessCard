@@ -44,10 +44,13 @@ ul {
     text-decoration: none;
 }
 
+
+
 /* Top section */
 
-header {
-    height: auto;
+.page_top {
+    height: 600px;
+    width: 100%;
     margin: 5px 0px;
 
     background: url(images/main_img.jpg) no-repeat center center;
