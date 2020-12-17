@@ -30,8 +30,9 @@ section {
     margin: 0px 0px;
 }
 
-section h1{
+section h1 {
     margin: 10px;
+    font-size: 32px;
 }
 
 .card {
@@ -83,6 +84,7 @@ section h1{
 .btn:hover {
     color: rgba(255,205,0,1);
     background: #ffffff;
+    
 }
 
 
@@ -212,6 +214,10 @@ section h1{
 
 /* Skills section */
 
+.skills {
+    font-size: 24px;
+}
+
 .skills h4 {
     margin-bottom: 5px;;
     color: #FFC53D
@@ -258,9 +264,17 @@ section h1{
     z-index: 1;
  }
 
- .text_overlay{
+ .text_overlay {
     position: absolute;
     z-index: 2;
+ }
+
+ .text_overlay h2 {
+     font-size: 40px;
+ }
+
+ .text_overlay p {
+    font-size: 16px;
  }
 
  .text_overlay h2, .text_overlay p {
@@ -300,7 +314,8 @@ section h1{
 }
 
 .contact_form h2 {
-    padding: 10px
+    padding: 10px;
+    font-size: 32px;
 }
 
 .contact_form form {
