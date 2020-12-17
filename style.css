@@ -7,8 +7,8 @@
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
 }
 
 ul {
@@ -58,6 +58,10 @@ section h1{
     padding: 15px 0px 15px 0px;
 }
 
+.card_section img {
+    margin: 20px;
+}
+
 .card_divider {
     padding-bottom: 18px;
     border-bottom: 3px dotted rgb(234, 196, 98);
@@ -73,7 +77,14 @@ section h1{
     color: #ffffff;
     background: linear-gradient(to right, rgba(251,160,12,1) 0%, rgba(255,205,0,1) 100%);
     font-weight: bold;
+    transition: 0.3s;
 }
+
+.btn:hover {
+    color: rgba(255,205,0,1);
+    background: #ffffff;
+}
+
 
 
 /* Menu */
@@ -83,15 +94,18 @@ section h1{
     justify-content: center;
     align-items: center;
 
-    border-bottom: 1px solid rgb(113, 105, 105);
+    padding: 15px;
+
+    background-color: #d0d0d0;
 }
 
 .logo img {
-    padding: 5px;
+    padding: 0 5px;
 }
 
 .logo h4 {
-    padding: 5px;
+    font-weight: 700;
+    padding: 0 5px;
 }
 
 .navigation {
@@ -105,8 +119,10 @@ section h1{
     width: 100%;
     padding: 5px;    
     text-align: center;
-    
-    border-bottom: 1px solid rgb(113, 105, 105);
+}
+
+.navigation li:hover {
+    background-color: #a2a2a2;
 }
 
 .navigation li a {
@@ -127,9 +143,8 @@ section h1{
     justify-content: center;
     align-items: center;
 
-    height: 400px;
+    height: 550px;
     width: 100%;
-    margin: 5px 0px;
 
     background: url(images/main_img.jpg) no-repeat center center;
     background-size: cover;
@@ -172,10 +187,40 @@ section h1{
 
 /* About me section */
 
+.about_me {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about_me h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
 .about_me li{
     margin: 5px;
 }
 
+.basic_info {
+    color: #FFC53D;
+}
+
+.basic_info b {
+    color: black;
+}
+
+
+
+/* Skills section */
+
+.skills h4 {
+    margin-bottom: 5px;;
+    color: #FFC53D
+}
+
+.skills .skills_dsc {
+    text-align: center;
+    margin: 10px 0px;
+}
 
 
 /* Portfolio section */
@@ -185,11 +230,16 @@ section h1{
     flex-wrap: wrap;
     justify-content: center;
 
+    margin: 10px 0;
+
     color: #ffffff;
  }
 
  .images_container img {
-    max-width: 100%;    
+    height: 100%;
+    max-width: 100%;  
+    height: 350px;
+    object-fit: cover;
  }
 
  .shaded_img {
@@ -204,7 +254,7 @@ section h1{
     height: 100%;
     width: 100%;
 
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(255, 144, 8, 0.4) 100%);    
+    background: linear-gradient(to bottom, rgba(34,34,34,0.5) 0%, rgba(255,154,61,0.5) 100%);    
     z-index: 1;
  }
 
@@ -232,7 +282,7 @@ section h1{
     align-items: center;
 
     width: 100%;
-
+    background-color: rgba(250,250,255,1);
 }
 
 .contact > div {
@@ -246,7 +296,7 @@ section h1{
     align-items: center;
 
     width: 100%;
-
+    margin-bottom: 20px;
 }
 
 .contact_form h2 {
@@ -271,6 +321,7 @@ section h1{
     background-color: rgb(242, 242, 242);
     border-width: 0;
     border-radius: 10px;
+    outline: none;
 }
 
 .contact_form form input:focus {
@@ -296,7 +347,7 @@ section h1{
 }
 
 .contact_info p:nth-child(2) {
-    margin-bottom: 70px;
+    margin-bottom: 120px;
 }
 
 .contact_info .icons_list {
@@ -315,8 +366,52 @@ section h1{
 
 .footer {
     padding: 10px;
+    text-align: center;
 
     color: rgb(165, 165, 165);
-    font-size: 12px;
-    text-align: center;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+
+    /* Navigation bar */
+
+    .header {
+        overflow: hidden;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 100%;
+        background:  #d0d0d0;
+        z-index: 3;
+    }
+
+    .navigation {
+        flex-flow: row nowrap;
+    }
+
+    .navigation li {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* Page top */
+
+    .page_top {
+        margin-top: 70px;
+    }
+
+
 }

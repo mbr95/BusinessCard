@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">    
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
 
@@ -14,17 +15,17 @@
 
 <body>
     <div class="wrapper">   
-        <header> 
+        <header class="header"> 
             <div class="logo">
                 <img src="images/Dev-logo.png" alt="">
                 <h4>Dev</h4>
             </div>
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about_me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,17 +40,17 @@
             </div>
         </section>
 
-        <section class="about_me">
+        <section id="about_me" class="about_me">
             <h1>About me</h1>
             <div class="card">
                 <div class="basic_info card_section card_divider">
                     <img src="images/about-me-img.png" alt="">
                     <ul>
-                        <li>Full Name: Designer</li>
-                        <li>Age: 21 Years</li>
-                        <li>Profile: Fullstack</li>
-                        <li>Telephone: +48 123-456-789</li>
-                        <li>E-mail: designer24@gmail.com</li>
+                        <li><b>Name:</b> Designer</li>
+                        <li><b>Age: </b> 21 Years</li>
+                        <li><b>Profile:</b> Fullstack</li>
+                        <li><b>Telephone:</b> +48 123-456-789</li>
+                        <li><b>E-mail:</b> <u>designer24@gmail.com</u></li>
                     </ul>
                 </div>
                 <div class="details card_section">
@@ -60,43 +61,49 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h1>Skills</h1>
             <div class="card">
                 <div class="card_section card_divider">
                     <img src="images/ui-icon.png" alt="">
-                    <h4>UX/UI</h4>
-                    <p>Figma</p>
+                    <span class="skills_dsc">
+                        <h4>UX/UI</h4>
+                        <p>Figma</p>    
+                    </span>
                 </div>
                 <div class="card_section card_divider">
                     <img src="images/frontend-icon.png" alt="">
-                    <h4>Front End</h4>
-                    <p>Html, CSS, JavaScript</p>
+                    <span class="skills_dsc">
+                        <h4>Front End</h4>
+                        <p>Html, CSS, JavaScript</p>
+                    </span>
                 </div>
                 <div class="card_section">
                     <img src="images/backend-icon.png" alt="">
-                    <h4>Back End</h4>
-                    <p>Node.js, .NET</p>
+                    <span class="skills_dsc">
+                        <h4>Back End</h4>
+                        <p>Node.js, .NET</p>
+                    </span>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <h1>Portfolio</h1>
             <div class="images_container">
                 <div class="shaded_img">
-                    <img src="https://placeimg.com/640/480/tech" alt="">
+                    <img src="images/portfolio-1.png" alt="">
                     <span class="text_overlay">
                         <h2>Design</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac magna sapien. Integer tempus luctus elementum. Cras id magna nulla. Donec nec pulvinar enim. </p>
                         <button class="btn" type="button">View</button>
                     </span>
                 </div>
-                <img src="https://placeimg.com/640/480/architecture" alt="">
-                <img src="https://placeimg.com/640/480/tech" alt="">
-                <img src="https://placeimg.com/640/480/sepia" alt="">
+                <img src="images/portfolio-2.png" alt="">
+                <img src="images/portfolio-3.png" alt="">
+                <img src="images/portfolio-4.png" alt="">
                 <div class="shaded_img">
-                    <img src="https://placeimg.com/640/480/nature" alt="">
+                    <img src="images/portfolio-5.png" alt="">
                     <span class="text_overlay">
                         <h2>Design project</h2>
                         <p>Curabitur non enim rhoncus, semper quam in, placerat nulla. Curabitur viverra sem lorem, ut hendrerit ipsum placerat ac. Phasellus a neque mauris. </p>
@@ -106,7 +113,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact_form">
                 <h2>Let's start!</h2>
                 <form>
