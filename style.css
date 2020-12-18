@@ -31,7 +31,7 @@ section {
 }
 
 section h1 {
-    margin: 10px;
+    margin: 20px 0 10px 0;
     font-size: 32px;
 }
 
@@ -98,7 +98,7 @@ section h1 {
 
     padding: 15px;
 
-    background-color: #d0d0d0;
+    background-color: #e1dfdf;
 }
 
 .logo img {
@@ -124,7 +124,7 @@ section h1 {
 }
 
 .navigation li:hover {
-    background-color: #a2a2a2;
+    background-color: #ababab;
 }
 
 .navigation li a {
@@ -145,7 +145,7 @@ section h1 {
     justify-content: center;
     align-items: center;
 
-    height: 550px;
+    height: 600px;
     width: 100%;
 
     background: url(images/main_img.jpg) no-repeat center center;
@@ -155,7 +155,7 @@ section h1 {
 }
 
 .page_top h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     opacity: 1;
 }
 
@@ -186,6 +186,7 @@ section h1 {
 .icons_list .icon {
     max-width: 90%;
 }
+
 
 /* About me section */
 
@@ -239,6 +240,7 @@ section h1 {
     margin: 10px 0;
 
     color: #ffffff;
+    background: rgba(250,250,255,1);
  }
 
  .images_container img {
@@ -300,7 +302,11 @@ section h1 {
 }
 
 .contact > div {
-    padding: 20px 10px;
+    padding: 0px 0px;
+}
+
+.contact_card {
+    width: 100%;
 }
 
 .contact_form {
@@ -325,12 +331,17 @@ section h1 {
     align-items: center;
 
     width: 100%;
+
 }
 
-.contact_form form input {
+.contact_form form textarea {
+    resize: none;
+}
+
+.contact_form form input, textarea {
     width: 80%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
 
     color: rgb(165, 165, 165);
     background-color: rgb(242, 242, 242);
@@ -339,7 +350,7 @@ section h1 {
     outline: none;
 }
 
-.contact_form form input:focus {
+.contact_form form input:focus, textarea:focus {
     box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -371,7 +382,7 @@ section h1 {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 50%;
+    width: 60%;
     margin-bottom: 10px;
 }
 
@@ -404,7 +415,7 @@ section h1 {
         justify-content: space-between;
 
         width: 100%;
-        background:  #d0d0d0;
+        background:  #e1dfdf;
         z-index: 3;
     }
 
@@ -428,5 +439,30 @@ section h1 {
         margin-top: 70px;
     }
 
+    .page_top h1 {
+        font-size: 5em;
+    }
+
+
+    /* About me section*/
+
+    .card_section:nth-child(1) {
+        flex-direction: row;
+    }
+
+
+    /* Contact section */
+
+    .contact_card {
+        width: 80%;
+        margin: 20px 0;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding-bottom: 0;
+    }
+
+    .icons_list {
+        width: 50%;
+    }
 
 }
