@@ -35,37 +35,6 @@ section h1 {
     font-size: 2rem;
 }
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 80%;
-    margin: 10px 0 30px 0;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card_section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 80%;
-    padding: 15px 0px 15px 0px;
-}
-
-.card_section img {
-    margin: 20px;
-}
-
-.card_divider {
-    padding-bottom: 18px;
-    border-bottom: 3px dotted rgb(234, 196, 98);
-}
-
 .btn {
     padding: 10px 30px;
     margin-top: 10px;
@@ -76,6 +45,7 @@ section h1 {
     color: #ffffff;
     background: linear-gradient(to right, rgba(251,160,12,1) 0%, rgba(255,205,0,1) 100%);
     font-weight: 700;
+    font-size: 1rem;
     transition: 0.3s;
 }
 
@@ -158,7 +128,7 @@ section h1 {
 }
 
 .page_top h2 {
-    padding: 3px 30px;
+    padding: 5px 30px;
     font-size: 1.5rem;
     opacity: 1;
 
@@ -168,23 +138,54 @@ section h1 {
 
 .page_top .icons_list {
     padding: 10px;
-    margin: 10px auto;
+    margin: 10px;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
 
     width: 60%;
 }
 
 .icons_list a {
-    padding: 4%;
+    padding: 10px 10px;
 }
 
-.icons_list .icon {
-    max-width: 90%;
+
+
+/* About me + skills section */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: 10px 0 30px 0;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    padding: 15px 0px;
+}
+
+.card_section img {
+    margin: 20px;
+}
+
+.card_divider {
+    padding-bottom: 18px;
+    border-bottom: 3px dotted rgb(234, 196, 98);
+}
 
 /* About me section */
 
@@ -300,6 +301,8 @@ section h1 {
 }
 
 .contact_card {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -372,7 +375,7 @@ section h1 {
     margin-bottom: 120px;
 }
 
-.contact_info .icons_list {
+.contact_info > .icons_list {
     align-self: flex-start;
     display: flex;
     flex-wrap: nowrap;
@@ -402,7 +405,9 @@ section h1 {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 768px) {
+/* Tablet portrait */
+
+@media only screen and (min-width: 600px) {
 
     /* Navigation bar */
 
@@ -442,10 +447,15 @@ section h1 {
         font-size: 5em;
     }
 
+    /* About me + skills sections*/
+
+    .card {
+        width: 60%;
+    }
 
     /* About me section*/
 
-    .card_section:nth-child(1) {
+    .basic_info.card_section:nth-child(1) {
         flex-direction: row;
     }
 
@@ -453,11 +463,15 @@ section h1 {
     /* Contact section */
 
     .contact_card {
-        width: 80%;
+        width: 70%;
         margin: 20px 0;
 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         padding-bottom: 0;
+    }
+
+    .about_me .card_section:nth-child(2) {
+        padding: 40px;
     }
 
     .icons_list {
@@ -465,3 +479,59 @@ section h1 {
     }
 
 }
+
+/* Tablet landscape */
+
+@media only screen and (min-width: 900px) {
+
+    /*About me + skills sections*/
+
+    .card {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .card_section {
+        height: 50vh;
+        padding: 15px 15px;
+    }
+
+    .card_divider {
+        height: 30vh;
+        padding-bottom: 0;
+        border-bottom: none;
+        
+        padding-right: 15px;
+        border-right: 3px dotted rgb(234, 196, 98);
+    }
+
+    /* Skills section */
+
+    .skills .card_section {
+        height: 40vh;
+    }
+
+    .skills .card_divider {
+        height: 30vh;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    /* Contact section */
+
+    .contact_card {
+        flex-direction: row-reverse;
+        width: 80%;
+    }
+
+    .contact_form {
+        width: 80%;
+    }
+
+    .contact_form form {
+        width: 80%;
+    }
+}
+
